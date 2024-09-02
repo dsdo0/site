@@ -1,0 +1,44 @@
+.gallery-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    perspective: 1500px; 
+}
+
+.photo-container {
+    display: flex;
+    transition: transform 1s;
+}
+
+.photo {
+    width: 100%;
+    max-width: 100%;
+    transition: transform 1s;
+    backface-visibility: hidden;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    border: none;
+    background-color: #135306;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #054e1b;
+}
+
+#prevButton {
+    left: 10px;
+}
+
+#nextButton {
+    right: 10px;
+}

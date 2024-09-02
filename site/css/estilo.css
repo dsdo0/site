@@ -1,0 +1,124 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    body {
+        background-color: #ffffff;
+        color: #333;
+    }
+    
+    header {
+        background-color: #05461b;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+    header.hover {
+        color: #c9f0c1;
+        transform: scale(1.1);
+    }
+    
+    header .logo img {
+        width: 130px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin-right: 150px;
+        position: relative;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 15px;
+        display: block;
+        transition: color 0.3s, transform 0.3s;
+        border-radius: 4px;
+    }
+    
+    
+    nav ul li a:hover {
+        color: #c9f0c1;
+        transform: scale(1.1);
+    }
+    
+   
+    nav ul li a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: #c9f0c1;
+        left: 0;
+        bottom: 0;
+        transition: width 0.3s;
+    }
+    
+    nav ul li a:hover::after,
+    nav ul li.active a::after {
+        width: 100%;
+    }
+    
+    
+    nav ul li.active a {
+        color: #c9f0c1;
+        font-weight: bold;
+    }
+    .title h1 {
+        font-size: 3em;
+        color: #ffffff;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        padding: 15px;
+        background: #05461b;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .title h1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -75%;
+        width: 50%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        transform: skewX(-25deg);
+        transition: left 0.7s ease-in-out;
+    }
+    
+    .title h1:hover::before {
+        left: 125%;
+    }
+    
+    .paragrafo {
+        padding: 20px;
+        font-size: 35px;
+        line-height: 1.6;
+        margin: 0 auto;
+        text-align: relative;
+    }
+    
+    .paragrafo img.imagem {
+        max-width: 60%;
+        height: auto;
+        display: block;
+        margin: 20px 0;
+    }
